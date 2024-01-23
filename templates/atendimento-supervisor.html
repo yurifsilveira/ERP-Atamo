@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pagina Inicial</title>
+        <style rel="stylesheet" type="text/css" media="all">
+            html{
+                box-sizing: border-box;
+                margin: 0px;
+                padding:0px;
+                height: 100%;
+                width: 100%;
+            }
+            *,*::before,*:after{
+                box-sizing: inherit;
+            }
+            h1{
+                width: 100%;
+                height: 50%;
+                padding-bottom: 0;
+                margin-bottom: 10px;
+                color:#0B2340;
+                font-family: 'Calibri';
+                font-weight: bold;
+                font-size: 50px;
+                text-align: center;
+            }
+            h2 {
+                width: 100%;
+                height: 50%;
+                padding-top:0;
+                margin-top: 0;
+                color:#AFABAB;
+                font-size: 20px;
+                font-family: 'Calibri';
+                font-weight: normal;
+                text-align: center;
+            }
+            h3 {
+                color:#AFABAB;
+                font-family: 'Calibri';
+                font-weight: normal;
+            }
+            h4 {
+                width: 100%;
+                color:#0F0F0F;
+                font-family: 'Roboto';
+                font-weight: normal;
+            }
+            body{
+                width: 100%;
+                height: 100%;
+            }
+            .menu-barra-inicial{
+                background: #0B2340;
+                height: 28px;
+            }
+            header{
+                height: 15%;
+            }
+            main {
+                height: 85%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content:baseline;
+                padding: 0;
+                margin:0;
+            }
+            body > main > section[class="menu-barra-lateral"]{
+                width:min(20%,400px);
+                height:30px;
+                margin-left: 15px;
+            }
+            body > main > section[class = "menu-barra-lateral"] > nav  {
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+                padding:0;
+                margin: 0;
+                border-bottom: #AFABAB solid 0.1px;
+                width: 80%;              
+            }
+            body > main > section[class = "menu-barra-lateral"] > nav > ul {
+                padding:10px;
+            }
+            body > main > section[class = "menu-barra-lateral"] > nav > ul > li { 
+                list-style-type:none;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width:220px;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-bottom: 2px;
+                border-radius:10px ;
+            }
+            body > main > section[class = "menu-barra-lateral"] > nav > ul > li:hover{ 
+                list-style-type:none;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width:220px;
+                padding-right: 15px;
+                margin: 0 2px 2px 0;
+                border-radius:10px ;
+                background-color:#ECE1E1;
+            }
+            body > main > section[class = "menu-barra-lateral"] > nav > ul > li > a {
+                display:flex;
+                justify-content:flex-start;  
+                align-items: center;
+                text-decoration: none;
+                height:50px;
+                padding-left: 10px;              
+            }
+            .icone{
+                width:40px;
+                height: 30px;
+                margin-right: 10px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            #icone-logo{
+                width: 40px;
+                height: 40px;
+            }
+            .cabeçalho-logo{
+                display: flex;
+                flex-direction: row;
+                margin-left:38px;
+                margin-top:5px;
+                align-items: center;
+            }
+            #menu-supervisor-virtual{
+                background-color: #ECE1E1;
+            }
+        .filtros{
+            margin:10px 0px 10px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-betweens;
+        }
+        .filtros > .filtro-selecionar {
+            margin: 10px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        .filtros > .filtro-botao {
+            width: 75%;
+        }
+        .filtros > .filtro-botao > fieldset {
+            margin: 10px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        section[class="janela-atividades"] {
+            width: 100%;
+            max-width: 81vw;
+            height: 100%;
+            max-height: 81vh;
+            position: absolute;
+            left: 18vw;
+            top: 15vh;
+            /* background-color: rgb(204, 194, 194); */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .dataframe-supervisor {
+            background-color: #0B2340;
+            color: #ECE1E1;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="menu-barra-inicial"></div>
+            <div class="cabeçalho-logo">
+                <img class="icone" id="icone-logo" src="/img/logo-atamos.png">
+                <h3>Átamos Serviços</h3>
+            </div>
+        </header>
+        <main>
+           <section class="menu-barra-lateral"> 
+                <nav class = "menu-navegação">
+                    <ul>
+                        <li class="botao-navegacao" id="menu-supervisor-virtual">
+                            <a href="Menu-Supervisor-Virtual.html">
+                                <img class="icone" src="img/icone_telaSupervisor.png">
+                                <h4>Supervisor Virtual</h4>
+                            </a>
+                        </li>
+                        <li class="botao-navegacao" id="menu-aprovacao">
+                            <a href="Menu-Aprovação.html">
+                                <img class="icone" src="img/icone_telaAprovação.png">
+                                <h4>Aprovação</h4>
+                            </a>
+                        </li>
+                        <li class="botao-navegacao" id="menu-coletas-pendentes">
+                            <a href="Menu-Coletas-Pendentes.html">
+                                <img class="icone" src="img/icone_coletasPendentes.png">
+                                <h4>Coletas Pendentes</h4>
+                            </a>
+                        </li>
+                        <li class="botao-navegacao" id="menu-lista-compra">
+                            <a href="Menu-Lista-Compra.html">
+                                <img class="icone" src="img/icone_ListaCompras.png">
+                                <h4>Lista de Compras</h4>
+                            </a>
+                        </li>
+                        <li class="botao-navegacao" id="menu-entregas-pendentes">
+                            <a href="Menu-Entregas-Pendentes.html">
+                                <img class="icone" src="img/icone_entregasPendents.png">
+                                <h4>Entregas Pendentes</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="filtros">
+                    <div class="filtro-selecionar" id="cliente">
+                        <label for="label-cliente">Cliente:</label>
+                        <select name="cliente" id="clientes">
+                            <option value="1">Paula</option>
+                            <option value="2">Iasmin</option>
+                            <option value="3">Rodolf</option>
+                            <option value="4">Lorena</option>
+                            <option value="5">Todos</option>
+                        </select>
+                    </div>
+                    <div class="filtro-selecionar" id="tecnico">
+                        <label for="label-tecnico">Tecnico:</label>
+                        <select name="tecnico" id="tec">
+                            <option value="1">Paula</option>
+                            <option value="2">Iasmin</option>
+                            <option value="3">Rodolf</option>
+                            <option value="4">Lorena</option>
+                            <option value="5">Todos</option>
+                        </select>
+                    </div>
+                    <div class="filtro-botao" id="categoria">
+                        <fieldset>
+                            <legend>Categoria:</legend>
+                            <label><input type="radio" name="botao" value="Periferico">Periferico</label>
+                            <label><input type="radio" name="botao" value="Software">Software</label>
+                            <label><input type="radio" name="botao" value="Todos">Todos</label>
+                        </fieldset>
+                    </div>
+                </div>
+            </section>
+            <section class="janela-atividades">
+                <iframe allowfullscreen="True" src="tabela.html"></iframe>
+            </section>
+        </main>
+    </body>
+</html>

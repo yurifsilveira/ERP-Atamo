@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilo para o contêiner do formulário */
+        .comment-form {
+            width: 300px; /* Largura máxima do formulário */
+            margin: 0 auto; /* Centralizar o formulário na página */
+        }
+
+        /* Estilo para a área de texto do comentário */
+        .comment-text {
+            width: 100%;
+            max-width: 100%; /* Evita que o texto ultrapasse a largura do contêiner */
+            height: auto; /* Altura automática para quebrar linhas */
+        }
+    </style>
+</head>
+<body>
+    <div class="comment-form">
+        <form>
+            <label for="comment">Comentário:</label>
+            <textarea id="comment" class="comment-text" rows="4" name="comment" placeholder="Digite seu comentário aqui..."></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
